@@ -1,0 +1,26 @@
+{%extends 'all_projects/pro-base.html'%}
+<!--  -->
+{% block content %}
+<br><br>
+<div class="container">
+  <div class="jumbotron" style="background-color:#ADA0A6">
+    <div class="row">
+      <h1 class="text-center">{{project.name}}</h1>
+    </div>
+    <div class="row">
+      <img src="{{project.screenshot.url}}" class="img-responsive img-thumbnail img-fluid" style="width:1045px; height:600px" alt="Screenshot">
+    </div>
+    <br><br>
+    <div class="well" style="background-color:#D2CBCB">
+      <div class="row">
+        <p>{{project.description}}</p>
+      </div>
+
+      <div class="row">
+        <p>See deployed project <a href="{{project.deployedUrl}}" target="_blank">here</a> </p>
+        <p>See code <a href="{{project.repoUrl}}" target="_blank">here</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,334 @@
+{% load bootstrap3 %} {% load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" type="image/png" href="#" />
+  <title>Samirah Maison</title>
+  {% block styles %}
+  <!--  -->
+  {% bootstrap_css %}
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static '/css/style.css' %}">
+  <!--  -->
+  {% endblock %}
+</head>
+
+<body>
+  {% block content %}
+  <!-- BEGIN NAVBAR -->
+  <div class="navbar">
+    <!-- <a href="#about">About</a> -->
+    <!-- <a href="#experience">Experience</a> -->
+    <!-- <a href="#education">Education</a> -->
+    <a href="/">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <!-- END NAVBAR -->
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="jumbotron">
+      <div class="jumbotron-text">
+        <h1 style="text-transform: uppercase;font-weight: 600;font-size: 2em;margin-bottom: 0;">Samirah Dekowski Maison</h1>
+        <br>
+
+        <div class="row">
+          <img class="img-responsive img-fluid" style="float:left; width:250px; height:250px; " src="{% static '/images/selfy.jpg'%}" alt="avatar">
+
+          <p>
+            <br> Full-Stack Web Developer in Accra, GH. <br> Born in the year of the horse. My favourite colors depend on my mood. I <strong><em>LOVE</em></strong> avocado and mango. <br>If I could eat them everyday I would. I hate scary movies.
+          </p>
+
+
+          <div class="jumbotron-social">
+            <ul class="ul-social">
+              <li class="li-social-links">
+                <a class="social" href="https://github.com/sami-mai/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+              </li>
+              <li class="li-social-links">
+                <a class="social" href="https://linkedin.com/sami-mai" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </li>
+              <li class="li-social-links">
+                <a class="social" href="https://www.facebook.com/samirah.maison" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </li>
+              <!-- <li class="li-social-links">
+            <a class="social" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li> -->
+              <!-- <li class="li-social-links">
+            <a class="social" href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          </li> -->
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <!-- <div id="down-arrow">
+        <span><a href="#about"><i class="fa fa-chevron-down" aria-hidden="true"></i></a></span>
+      </div> -->
+    </div>
+    <!-- END HEADER -->
+    <br><br>
+
+
+    <!-- BEGIN ABOUT -->
+    <!-- <div class="row white box-shadow">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+          <a class="anchor" name="about"></a>
+          <h2>Fun Facts About Me</h2>
+      </div>
+      <div class="content-body">
+        <p> Born in the year of the horse. My favourite colors depend on my mood. I <strong><em>LOVE</em></strong> avocado and mango. If I could eat them everyday I would. I hate scary movies.
+        </p>
+      </div>
+    </div>
+    <div class="side-content"></div>
+  </div> -->
+    <!-- END ABOUT -->
+
+    <!-- BEGIN EXPERIENCE -->
+    <!-- <div class="row">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+          <a class="anchor" name="experience"></a>
+          <h2>Experience</h2>
+        </div> -->
+    <!-- CARD #1 -->
+    <!-- <div class="content-body">
+          <div class="card">
+            <div class="card-header">
+              <h4>Moringa School <span class="job-title">Admissions Intern</span></h4>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div> -->
+
+    <!-- CARD #2 -->
+
+    <!-- <div class="card">
+            <div class="card-header">
+              <h4>PEC Consult <span class="job-title">Civil/Water Engineer</span></h4>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div> -->
+
+    <!-- CARD #3 -->
+
+    <!-- <div class="card">
+            <div class="card-header">
+              <h4>Stresscon <span class="job-title">Structural Engineer, Intern</span></h4>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div> -->
+    <!-- END EXPERIENCE -->
+
+    <!-- BEGIN EDUCATION -->
+    <!-- <div class="row white box-shadow">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+          <a class="anchor" name="education"></a>
+          <h2>Education</h2>
+        </div>
+        <div class="content-body"> -->
+
+    <!-- EDUCATION 1 -->
+    <!-- <div class="card">
+            <div class="card-header">
+              <h4>Moringa School <span class="job-title">March 2018 to date</span></h4>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div> -->
+    <!-- EDUCATION 2 -->
+    <!-- <div class="card">
+            <div class="card-header">
+              <h4>KNUST <span class="job-title">Aug 2011 to June 2014</span></h4>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div> -->
+    <!-- END EDUCATION -->
+
+    <!-- BEGIN PROJECTS -->
+    <div class="row">
+      <div class="side-content-sm"></div>
+      <div class="main-content-lg">
+        <div class="content-header">
+          <a class="anchor" name="projects"></a>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="content-body">
+          {%for project in projects%}
+          <!-- CARD #1 -->
+          <div class="project-card">
+            <div class="project-image"><a href="{% url 'project' project.slug%}">
+              <img class="img-responsive img-fluid img-thumbnail" src="{{project.screenshot.url}}"></a>
+            </div>
+            <div class="project-content">
+              <a href="{% url 'project' project.slug%}">
+                <h4>{{project.name}}</h4></a>
+              <br>
+              <p>{{project.description}}.</p>
+              <br>
+              <a href="{{project.repoUrl}}" target="_blank"> Github Repo</a>
+              <a href="{{project.deployedUrl}}" target="_blank">Live Site</a>
+            </div>
+          </div>
+          {%empty%}
+          <!-- CARD #2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="http://placehold.it/250x350">
+            </div>
+            <div class="project-content">
+              <h4>Project Name</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a href="#">Link Text</a>
+            </div>
+          </div>
+          {%endfor%}
+          <!-- CARD #3 -->
+          <!-- <div class="project-card">
+            <div class="project-image">
+              <img src="http://placehold.it/250x350">
+            </div>
+            <div class="project-content">
+              <h4>Project Name</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a href="#">Link Text</a>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+      <div class="side-content-sm"></div>
+    </div>
+    <!-- END PROJECTS -->
+
+    <!-- BEGIN SKILLS -->
+    <div class="row white box-shadow">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+          <a class="anchor" name="skills"></a>
+          <h2>Skills</h2>
+        </div>
+        <div class="content-body">
+          <ul class="ul-skills">
+
+            <li class="li-skills">HTML</li>
+            <li class="li-skills">CSS</li>
+            <li class="li-skills">Javascript</li>
+            <li class="li-skills">jQuery</li>
+            <li class="li-skills">Angular</li>
+            <li class="li-skills">Python</li>
+            <li class="li-skills">Flask</li>
+            <li class="li-skills">Django</li>
+
+            <!-- <li class="li-skills">Javascript</li>
+            <li class="li-skills">HTML</li>
+            <li class="li-skills">CSS</li>
+            <li class="li-skills">React</li>
+            <li class="li-skills">Node.js</li>
+            <li class="li-skills">Bootstrap</li>
+            <li class="li-skills">Webpack</li>
+            <li class="li-skills">jQuery</li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div>
+    <!-- END SKILLS -->
+
+    <!-- BEGIN CONTACT -->
+
+    <div class="row blue">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+          <a class="anchor" name="contact"></a>
+          <h2 class="white-text">Contact Me</h2>
+        </div>
+        <div class="contact content-body">
+          <form method="POST" action="samirah.maison@gmail.com">
+            <input type="hidden" name="_subject" value="Contact request from personal website" />
+            <input type="email" name="_replyto" placeholder="Your email" required>
+            <textarea name="message" placeholder="Your message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div>
+  </div>
+  <br>
+  <!-- END CONTACT -->
+  {%endblock%}
+  <!-- BEGIN FOOTER -->
+  <!-- <div class="container-fluid"> -->
+  <div class="row" style="background-color: #D2CBCB;">
+    <div class="side-content">
+
+
+    </div>
+    <div class="main-content">
+      <div class="content-header">
+      </div>
+      <div class="content-body text-center">
+        <p class="pull-right" style="color:#ADA0A6;"><a href="/">Back to top</a></p>
+        <p>&copy; 2018 Sami-Mai </p>
+      </div>
+    </div>
+    <div class="side-content"></div>
+  </div>
+
+  <!-- END FOOTER -->
+
+
+  {% block scripts %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  {% bootstrap_javascript %}
+
+  <!--  -->
+  {% endblock %}
+</body>
+
+</html>

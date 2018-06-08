@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <!--  -->
   {% if title %}
-  <title>Mai Portfolio - {{title}}</title>
+  <title>Mai Portfolio - {{project.name}}</title>
   {% else %}
   <title> Mai Portfolio </title>
   {% endif %}
@@ -16,14 +16,14 @@
   {% block styles %}
   <!--  -->
   {% bootstrap_css %}
-  <link rel="stylesheet" href="{% static 'css/pro-styles.css' %}">
+  <link rel="stylesheet" href="{% static 'css/pro-style.css' %}">
   <!--  -->
   {% endblock %}
 
 </head>
 
 <body>
-  {% include "navbar.html" %}
+
   <!--  -->
   {% block content %}
   <h1 class='text-center'>She welcomes you to see her projects</h1>
