@@ -2,5 +2,5 @@
 *.swp
 virtual/
 *.pyc
-.envheroku run python3.6 manage.py migrate
+.env
 staticfiles/

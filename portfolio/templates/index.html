@@ -1,4 +1,4 @@
-{% load bootstrap3 %} {% load static%}
+{% load bootstrap3 %} {% load staticfiles%}
 <!DOCTYPE html>
 <html>
 
@@ -29,8 +29,8 @@
     <!-- <a href="#experience">Experience</a> -->
     <!-- <a href="#education">Education</a> -->
     <a href="/">Home</a>
-    <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </div>
   <!-- END NAVBAR -->
@@ -39,38 +39,43 @@
 
     <!-- HEADER -->
     <div class="jumbotron">
+      <br><br><br>
       <div class="jumbotron-text">
-        <h1 style="text-transform: uppercase;font-weight: 700;font-size: 2.5em;margin-top: 0; padding-top:0">Samirah Dekowski Maison</h1>
+        <h1 class="text-center" style="text-transform: uppercase;">Samirah Dekowski Maison</h1>
         <br>
-
-        <div class="row text-center" style="width:950px; padding-left:100px;">
-          <img class="img-responsive img-fluid" style="float:left; width:250px; height:250px; " src="{% static '/images/selfy.jpg'%}" alt="avatar">
-          <div class="">
-            <p>
-              Full-Stack Web Developer in Accra, GH. <br><br><em><strong>--- Fun Facts About Me ---</strong> </em> <br> Born in the year of the horse. My favourite colors depend on my mood. I <strong><em>LOVE</em></strong> avocado and mango. <br>If I
-              could eat them everyday I would. I hate scary movies.
-            </p>
-            <br>
-            <div class="jumbotron-social">
-              <ul class="ul-social">
-                <li class="li-social-links">
-                  <a class="social" href="https://github.com/sami-mai/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                </li>
-                <li class="li-social-links">
-                  <a class="social" href="https://linkedin.com/sami-mai" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </li>
-                <li class="li-social-links">
-                  <a class="social" href="https://www.facebook.com/samirah.maison" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                </li>
-                <!-- <li class="li-social-links">
-            <a class="social" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          </li> -->
-                <!-- <li class="li-social-links">
-            <a class="social" href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-          </li> -->
-              </ul>
+        <h3 class="text-center">
+         Full Stack Web Developer in Accra, GH.</h3>
+        <br><br>
+        <div class="row" style="background:#ADA0A6;opacity:0.6; margin-left:40px;margin-right:40px;">
+          <div class="col-md-1"></div>
+          <div class="col-md-3 well" style="background-image: url('{% static '/images/selfy.jpg'%}');background-size: cover;">
+            <!-- <div class="row text-center" style="width:950px; padding-left:100px;"> -->
+            <!-- <img class="img-responsive img-fluid img-rounded" style="size:cover; width:300px; height:300px;margin-right:0px; " src="{% static '/images/selfy.jpg'%}" alt="avatar"> -->
+          </div>
+          <div class="col-md-7 well" style="background:#D2CBCB;padding-left:40px;margin-left:0px;">
+            <div class="summary">
+              <br>
+              <p class="text-center"><em><strong> Fun Facts About Me </strong> </em></p>
+              <br>
+              <p>Born in the year of the horse. My favourite colors depend on my mood. I <strong><em>LOVE</em></strong> avocado and mango. <br>If I could eat them everyday I would. I hate scary movies.
+              </p>
+              <br>
+              <div class="jumbotron-social">
+                <ul class="ul-social">
+                  <li class="li-social-links">
+                    <a class="social" href="https://github.com/sami-mai/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="li-social-links">
+                    <a class="social" href="https://linkedin.com/sami-mai" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="li-social-links">
+                    <a class="social" href="https://www.facebook.com/samirah.maison" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
+          <div class="col--1"></div>
         </div>
       </div>
       <!-- <div id="down-arrow">
@@ -184,6 +189,41 @@
     </div> -->
     <!-- END EDUCATION -->
 
+    <!-- BEGIN SKILLS -->
+    <div class="row white box-shadow">
+      <div class="side-content"></div>
+      <div class="main-content">
+        <div class="content-header">
+          <a class="anchor" name="skills"></a>
+          <h2>Skills</h2>
+        </div>
+        <div class="content-body">
+          <ul class="ul-skills">
+
+            <li class="li-skills">HTML</li>
+            <li class="li-skills">CSS</li>
+            <li class="li-skills">Javascript</li>
+            <li class="li-skills">jQuery</li>
+            <li class="li-skills">Angular</li>
+            <li class="li-skills">Python</li>
+            <li class="li-skills">Flask</li>
+            <li class="li-skills">Django</li>
+
+            <!-- <li class="li-skills">Javascript</li>
+            <li class="li-skills">HTML</li>
+            <li class="li-skills">CSS</li>
+            <li class="li-skills">React</li>
+            <li class="li-skills">Node.js</li>
+            <li class="li-skills">Bootstrap</li>
+            <li class="li-skills">Webpack</li>
+            <li class="li-skills">jQuery</li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div>
+    <!-- END SKILLS -->
+    <br>
     <!-- BEGIN PROJECTS -->
     <div class="row">
       <div class="side-content-sm"></div>
@@ -243,40 +283,7 @@
     </div>
     <!-- END PROJECTS -->
 
-    <!-- BEGIN SKILLS -->
-    <div class="row white box-shadow">
-      <div class="side-content"></div>
-      <div class="main-content">
-        <div class="content-header">
-          <a class="anchor" name="skills"></a>
-          <h2>Skills</h2>
-        </div>
-        <div class="content-body">
-          <ul class="ul-skills">
 
-            <li class="li-skills">HTML</li>
-            <li class="li-skills">CSS</li>
-            <li class="li-skills">Javascript</li>
-            <li class="li-skills">jQuery</li>
-            <li class="li-skills">Angular</li>
-            <li class="li-skills">Python</li>
-            <li class="li-skills">Flask</li>
-            <li class="li-skills">Django</li>
-
-            <!-- <li class="li-skills">Javascript</li>
-            <li class="li-skills">HTML</li>
-            <li class="li-skills">CSS</li>
-            <li class="li-skills">React</li>
-            <li class="li-skills">Node.js</li>
-            <li class="li-skills">Bootstrap</li>
-            <li class="li-skills">Webpack</li>
-            <li class="li-skills">jQuery</li> -->
-          </ul>
-        </div>
-      </div>
-      <div class="side-content"></div>
-    </div>
-    <!-- END SKILLS -->
 
     <!-- BEGIN CONTACT -->
 

@@ -50,6 +50,23 @@ body {
   flex-direction: column;
 }
 
+.jumbotron-text {
+  /*TAGLINE UNDER NAME*/
+  font-weight: 400;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.jumbotron-text h1 {
+  /*YOUR NAME*/
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
 .jumbotron-text p {
   margin: 0;
 }
